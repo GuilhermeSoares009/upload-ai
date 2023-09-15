@@ -1,0 +1,10 @@
+{
+	"devDependencies": {
+		"@types/node": "^20.6.1",
+		"tsx": "^3.12.10",
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"fastify": "^4.23.2"
+	}
+}
