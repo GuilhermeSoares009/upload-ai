@@ -17,9 +17,21 @@ Content-Type: audio/mpeg
 ###
 
 # @name create-transcription
-Post http://localhost:3333/videos/54c0e0ef-32a2-4310-8fe1-07780ad3cfe0/transcription
+Post http://localhost:3333/videos/de2e79c5-ddf1-4444-b872-8ab70f1265a5/transcription
 Content-Type: application/json
 
 {
     "prompt": "clean architecture, ddd"
+}
+
+###
+
+# @name generate-ai-completion
+Post http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+    "videoId": "de2e79c5-ddf1-4444-b872-8ab70f1265a5",
+    "temperatue": 0.5,
+    "template": "Gere um resumo sucinto da transcrição do vídeo informar"
 }
